@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@500;700&family=Outfit&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Lobster&family=Lora:wght@400;500;600;700&family=Montserrat:wght@500;700&family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fraunces:wght@700&family=Lora:wght@400;500;600;700&family=Montserrat:wght@500;700&family=Outfit&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: hsl(30, 38%, 92%);
+    font-family: 'Fraunces', serif;
+    
+}
+
+
+
+.main {
+    display: flex;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    box-shadow:  0 0 20px rgb(213, 198, 198);
+}
+
+.container {
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 500px;
+    width: 630px;
+
+}
+
+
+img {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 100%;
+    width: 300px;
+}
+
+.img2{
+    display: none;
+}
+
+
+.content {
+
+    display: flex;
+    flex-direction: column;
+    margin: 25px 20px;
+    padding: 0 10px;
+}
+
+.content h5 {
+    color: gray;
+    letter-spacing: 4px;
+    padding: 8px 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.content h2 {
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+.content p{
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+}
+
+.content .price {
+    display: flex;
+    position: relative;
+    margin-top:10px ;
+}
+
+.price h3 {
+    font-size: 36px;
+    position: relative;
+    color: green;
+    font-family: 'Lobster', cursive;
+}
+
+.content .price h2{
+    color: rgb(1, 124, 1);
+    margin: 5px 0;
+}
+
+.price p {
+    margin: 26px;
+
+}
+
+
+.btn {
+    margin: 10px 0;
+    padding: 15px 5px;
+    border-radius: 5px ;
+    background-color:rgb(9, 101, 9) ;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: hsl(159, 97%, 15%);
+}
+
+@media (max-width: 375px ) {
+    .container {
+        flex-wrap: wrap;
+        width: 350px;
+        height: 750px;
+        /* margin: 20px 0; */
+    }
+
+    img{
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+
+    }
+
+    .img1 {
+        display: none;
+    }
+
+    .img2 {
+        display: block;
+    }
+
+    .main {
+        margin: 10px 0;
+    }
+
+}
+
+
+
+
+
