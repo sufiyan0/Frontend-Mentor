@@ -1,57 +1,42 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Outfit&family=Poppins:wght@400;500;600&display=swap');
 *{
     box-sizing: border-box;
 }
-
-
-
 body{
-    background-color: rgba(213,225,239,255);
-    /* background-image: url(Capture.PNG); */
-    
-    display: flex ;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    
-    flex-direction: column;
+    display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Outfit', sans-serif;
     min-height: 100vh;
+    background-color:rgba(213,225,239,255);
+    font-family: 'Outfit', sans-serif;
 }
-
-
-
-.main{
-    background-color:rgba(213,225,239,255) ;
-}
-.container{
-    background-color: white;
+.container {
     border-radius: 10px;
+    background: white;
+    display:flex;
+    flex-direction: column;
+    width: 330px;
+    height: 500px;
+    box-shadow:  0 0 20px rgb(196, 194, 194);
+}
+.contain .image {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;   
+}
+.image img {
     width: 300px;
-    padding: 20px;
-    /* margin-bottom; */
-
-}
-.container img{
-    border-radius: 30px;
-}
-.container img{
-    align-items: center;
-    width: 310px;
-    padding: 20px;
-    margin: -25px;
     border-radius: 10px;
-
 }
-
-.container h2{
+.contain h2 {
     text-align: center;
+    font-size: 24px;
+    margin: 20px;
+    color: hsl(218, 44%, 22%);
 }
-
-.container p{
+.contain p {
     text-align: center;
+    margin: 25px;
+    font-size: 16px;
+    color: hsl(212, 25%, 61%);
 }
