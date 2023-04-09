@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Red+Hat+Display:wght@400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: rgb(216,228,252);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    /* font-family: 'Red Hat Display', sans-seri; */
+}
+
+.container{
+    text-align: center;
+    background-color: hsl(225, 100%, 98%);
+    width: 350px;
+    height: 530px;
+    border-radius: 10px;
+}
+.container p{
+    padding: 10px;
+    margin: 5px;
+}
+.container img{
+    width: 350px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.container .order{
+    margin: 20px;
+    background-color: rgba(0, 0,0, 0.05);
+    border-radius: 5px;
+    padding: 5px;
+    display:flex;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.container .order img{
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.container .order p{
+    font-weight: bolder;
+    
+}
+.container .order p span{
+    font-weight:normal;
+    
+}
+.container .order a{
+    color: blue;
+    margin-top: 25px;
+    margin-left: 65px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button{
+    margin-left: 25px;
+    padding: 8px;
+    outline: none;
+    background-color:rgba(118,108,241,255);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 87%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    /* box-shadow:  rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+}
+button:hover{
+    transform: scale(1.01);
+}
+
+
+.contain a{
+    margin-top: 50px;
+}
+
+.cancel{
+    padding: 15px;
+}
