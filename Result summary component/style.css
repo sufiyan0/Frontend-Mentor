@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.main {
+    display: flex;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 10px gray;
+    position: relative;
+    height: 400px;
+    width: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.result {
+    /* background-color: rgb(0, 8, 255); */
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    width: 50%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.result h3 {
+    color: rgb(197, 197, 197);
+    margin: 20px 0;
+}
+
+.result .round {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    position: relative;
+    background-image: linear-gradient(hsl(241, 81%, 54%),hsl(252, 100%, 67%));
+    border-radius: 100px;
+    height: 150px;
+    width: 150px;
+    margin: 10px auto;
+    color: white;
+}
+ 
+.round h1 {
+    font-size: 60px;
+}
+
+.round span {
+    color: rgb(151, 149, 149);
+}
+
+
+.result h2 {
+    margin: 20px 0;
+    font-size: 25px;
+    color: white;
+}
+
+.result p { 
+    color: rgb(206, 205, 205);
+    margin: 20px 15px;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    border: 1px solid black;    
+    border-radius: 10px;
+    position: relative;
+    margin-top: 12px;
+    padding: 10px;
+}
+
+.card-img {
+    display: flex;
+    position: relative;
+    padding: 2px;    
+    margin: 0 5px;
+}
+
+.card-num{
+    display: flex;
+    position: absolute;
+    right: 0;
+    padding: 2px;
+    margin: 0 5px;
+}
+
+.card-img img {
+    margin-right: 8px;
+}
+.card-img p{
+    font-weight: 700;
+}
+
+.btn {
+    margin: 20px 0;
+    padding: 10px 0;
+    background-image: linear-gradient(hsl(241, 81%, 54%),hsl(252, 100%, 67%));
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 30px;
+
+}
+
+.crd-1 {
+    color: hsl(0, 100%, 67%);
+    outline: none;
+    border: none;
+    background:hsl(0, 43%, 96%) ;
+}
+.crd-2 {
+    color: hsl(39, 100%, 56%);
+    outline: none;
+    border: none;
+    background:hsl(39, 62%, 94%) ;
+}
+.crd-3 {
+    color: hsl(166, 100%, 37%);
+    outline: none;
+    border: none;
+    background:hsl(165, 67%, 94%);
+}
+.crd-4 {
+    color: hsl(234, 85%, 45%);
+    outline: none;
+    border: none;
+    background:hsl(235, 43%, 95%) ;
+}
+
+
+
+
+.card-num p {
+    font-weight: 800;
+    color: black;
+}
+
+.card-num span {
+    color: gray;
+    font-weight: 400;
+}
+
+@media (max-width:375px){
+
+    .main {
+        width: 300px;
+        height: 800px;
+        display: flex ;
+        position: relative;
+        /* padding: px 10px; */
+    }
+
+    .result{
+        width: 100%;
+
+    }
+
+}
