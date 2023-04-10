@@ -99,7 +99,17 @@ body  {
 .image img {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    opacity: 0.6;
+    /* opacity: 0.6; */
+}
+
+.color{
+    /* display: flex; */
+    position: absolute;
+    opacity: 0.4;
+    background-color: rgb(250, 141, 250);
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
 }
 
 @media (max-width:375px ){
