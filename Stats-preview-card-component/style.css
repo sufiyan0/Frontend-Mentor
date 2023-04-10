@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body  {
+    display: flex;
+    /* flex-wrap: wrap-reverse; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.main {
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+    color: white;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    height: 600px;
+    width: 1200px;
+    /* flex-wrap: wrap-reverse; */
+    overflow: hidden;
+
+}
+
+.item {
+    width: 50%;
+    margin: 10px;
+    padding: 35px 60px;
+}
+
+
+.item h1 {
+    font-size: 42px;
+    font-family: 'Inter', sans-serif;
+    padding: 0 10px;
+}
+
+.item h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+.item p {
+    color: rgb(212, 212, 212);
+    font-size: 18px;
+    padding: 0 10px;
+}
+.rating {
+    display: flex;
+    position: relative;
+    /* width: 50%; */
+}
+
+.items {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.items h2 {
+    position: relative;
+    font-size: 32px;
+    margin: 10px 10px;
+    width: 33%;
+    line-height:0 ;
+
+}
+
+.items p {
+    display: flex;
+    position: relative;
+    margin: 30px 0px;
+    line-height: 0;
+    color: rgb(173, 173, 173);    
+    font-size: 14px;
+}
+
+
+.image {
+    display: flex;
+    /* border-top-right-radius: 10px; */
+    color: purple;
+    opacity: 0.6 rgb(243, 119, 243)   ;
+    width: 50%;
+}
+
+.image img {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0.6;
+}
+
+@media (max-width:375px ){
+    .container{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        /* position: relative; */
+        width: 300px;
+        height: 100%;
+        overflow: hidden;
+        /* margin: 50px 0; */
+    }
+    .main {
+        margin: 20px 0;
+    }
+
+    .image {
+        display: flex;
+        width: 100%;
+        
+    }
+    .image img {
+        width: 300px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0;
+    }
+
+    .item {
+        display: inline-block;
+        width: 100%;
+        padding: 20px 10px;
+        /* flex-direction: column ; */
+
+    }
+    .item h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .item p {
+        text-align: center;
+    }
+
+    .rating {
+        display: flex;
+        flex-direction: column;        
+        width: 100%;
+    }
+
+    .items {
+        position: relative;
+        margin: 5px;
+        padding: 5px 80px ;
+    }
+
+}
