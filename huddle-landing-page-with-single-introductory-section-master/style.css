@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./bg-desktop.svg");
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;    
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%) ;
+
+}
+
+.main{
+    padding: 50px;
+}
+
+.hadder{
+    display: block;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.hadder img {
+    height: 70px;
+}
+
+.main-container {
+    display: flex;
+    position: relative;
+
+}
+.main-container img {
+    height: 100%;
+    width:100%;
+}
+
+.main-container .image {
+    width: 55%;
+    display: flex;
+}
+
+.main-container .content {
+    width: 40%;
+    color: beige;
+    margin: 0 50px;
+}
+
+
+.content h1 {
+    font-size:45px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.content p {
+    font-size: 16px;
+    color: hsl(300, 68%, 88%);
+}
+
+.btn {
+    margin: 10px 0;
+    padding: 15px 50px;
+    border-radius: 50px;
+    background-color:white ;
+    color: hsl(257, 40%, 49%);
+    font-weight: 400;
+    font-size: 20px;
+    box-sizing: 0 0 20px gray;
+    cursor: pointer;
+    border: none;
+}
+.btn:hover {
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.social-media {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 30px 50px;
+    padding: 20px;
+}
+.social-media a {
+    font-size: 15px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 100px;
+    margin: 5px;
+    padding: 5px 11px;
+}
+
+.social-media a:hover{
+    border-color:hsl(300, 69%, 71%) ;
+    color:hsl(300, 69%, 71%) ;
+}
+
+
+@media (max-width:375px) {
+    body {
+        background-image: url("./bg-mobile.svg");
+    }
+    .main-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
+    .hadder img {
+        height: 40px;
+    }
+    .main-container .content {
+        width: 100%;
+       
+    }
+
+    .image img{
+        width: auto;
+        height: 240px;
+    }
+    .main {
+        padding:  0 15px;
+    }
+    .content {
+        position: relative;
+        display: inline;
+        width: 100%;
+        text-align: center;
+    }
+    .content h1{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .social-media{
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0;
+    }
+    
+}
+@media (max-width:800px) {
+    .main-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
+    .hadder img {
+        height: 40px;
+    }
+    .main-container .content {
+        width: 100%;
+       
+    }
+
+    .image {
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .image img{
+        width: 550px;
+        height: 300px;
+    }
+   
+    .social-media{
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0;
+    }
+    
+}
+
+@media (max-width:1200px){
+    .content h1 {
+        font-size:35px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+    }
+    
+} 
+
+
+
+
+
+
