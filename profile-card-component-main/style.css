@@ -3,7 +3,30 @@
 *{
     box-sizing: border-box;
 }
+/* .bg{
+    position: relative;
+} */
+.top{
+    position: absolute;
+    top: -550px;
+    left: -400px;
+}
 
+.bottom{
+    position: absolute;
+    bottom: -55px;
+    right: 0;  
+    height: 300ox;  
+}
+
+.b{
+    position: relative;
+}
+.a{
+    background-image: url(./images/bg-pattern-top.svg);
+    background-image: url(./images/bg-pattern-bottom.svg);
+
+}
 body{
     
     font-family: 'Kumbh Sans', sans-serif;
@@ -12,7 +35,10 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    /* max-height: 100vh; */
     min-height: 100vh;
+    /* position: relative; */
+   
 }
 .background{
     background-image: url(./images/bg-pattern-card.svg) ;
