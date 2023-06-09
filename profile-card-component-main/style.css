@@ -12,21 +12,23 @@
     left: -400px;
 }
 
+
+
 .bottom{
     position: absolute;
     bottom: -55px;
     right: 0;  
     height: 300ox;  
 }
-
-.b{
-    position: relative;
+.top-img{
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: -300px;
 }
-.a{
-    background-image: url(./images/bg-pattern-top.svg);
-    background-image: url(./images/bg-pattern-bottom.svg);
 
-}
 body{
     
     font-family: 'Kumbh Sans', sans-serif;
@@ -35,10 +37,20 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* max-height: 100vh; */
+    max-height: 100vh;
     min-height: 100vh;
+
+    background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    background-repeat: no-repeat, no-repeat;
+    background-color: hsl(185deg, 75%, 39%);
     /* position: relative; */
    
+}
+
+.container{
+    max-height: 100vh;
+    overflow: hidden;
 }
 .background{
     background-image: url(./images/bg-pattern-card.svg) ;
