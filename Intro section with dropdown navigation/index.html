@@ -11,75 +11,81 @@
 </head>
 
 <body>
-    <header class="p-6 sm:p-10 ">
-        <div class="flex ">
-            <div class="">
+    <header class="p-6 sm:p-10 flex flex-row `">
+        <div class="flex w-full items-center justify-between     ">
+            <div class="flex">
                 <img src="./images/logo.svg" alt="logo">
             </div>
-            <div class="flex flex-row items-center justify-between flex-1">
-
-                <div class="">
-                    <div class="flex block md:hidden">
-                        <img src="./images/icon-menu.svg" alt="hamburger">
-                    </div>
-                    <div class="  flex-row hidden md:flex  w-full border-2 border-black justify-between ">
-                        <ul class="flex flex-row space-x-8 text-lg ml-10">
-                            
-
-                            <li>
-                                <div class="flex ">
-                                    <p>Features</p>
-                                    <img class="h-full w-full mt-3 ml-1 " src="./images/icon-arrow-down.svg"
-                                        alt="arrow">
-
-                                </div>
-                                <ul class="hidden   ">
-                                    <li>
-                                        <div class="flex">;[';']
-                                            <img src="./images/icon-todo.svg" alt="">
-                                            <p class="ml-2">Todo List</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flex">
-                                            <img src="./images/icon-calendar.svg" alt="">
-                                            <p class="ml-2">Calender</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flex">
-                                            <img src="./images/icon-reminders.svg" alt="">
-                                            <p class="ml-2">Reminders</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flex">
-                                            <img src="./images/icon-planning.svg" alt="">
-                                            <p class="ml-2">Plannings</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <div class="flex text-lg ml-3">
-                                    <p>Company</p>
-                                    <img class="h-full w-full mt-3 ml-1 " src="./images/icon-arrow-down.svg"
-                                        alt="arrow">
-
-                                </div>
-                                <ul class="hidden   ">
-                                        <li>History</li>
-                                        <li>Our Team</li>
-                                        <li>Blog</li>
-                                </ul>
-                            </li>
-                            <li>Careers</li>
-                            <li>About</li>
-                        </ul>
-
-                    </div>
+            <div class="flex flex-row items-center justify-end md:justify-between flex-1">
+                <div class=" block md:hidden ">
+                    <img src="./images/icon-menu.svg" alt="hamburger">
                 </div>
+                <div class="md:flex-row items-center  flex md:w-full md:justify-between justify-center w-[300px]  flex-col  h-full md:relative bg-gray-200 md:bg-white absolute right-0 top-0">
+                    <ul class="flex items-center justify-center font-bold flex-col md:flex-row space-y-12 md:space-y-0  md:space-x-8 text-lg md:ml-10">
+
+
+                        <li class="show">
+                            <div class="flex text-gray-500 hover:text-black">
+                                <p>Features</p>
+                                <img class="h-full w-full mt-3 ml-1 " src="./images/icon-arrow-down.svg" alt="arrow">
+
+                            </div>
+                            <ul class= "showNav hidden flex-col absolute bg-gray-200 p-6 space-y-3 rounded-lg mt-3 ml-2 items-center justify-center">
+                                <li>
+                                    <div class="flex  ">
+                                        <img src="./images/icon-todo.svg" alt="">
+                                        <p class="ml-2 ">Todo List</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="flex cursor-pointer">
+                                        <img src="./images/icon-calendar.svg" alt="">
+                                        <p class="ml-2">Calender</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="flex">
+                                        <img src="./images/icon-reminders.svg" alt="">
+                                        <p class="ml-2">Reminders</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="flex">
+                                        <img src="./images/icon-planning.svg" alt="">
+                                        <p class="ml-2">Plannings</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="show1" >
+                            <div class="flex  ml-3 text-gray-500 hover:text-black">
+                                <p>Company</p>
+                                <img class="h-full w-full mt-3 ml-1 " src="./images/icon-arrow-down.svg" alt="arrow">
+
+                            </div>
+                            <ul class="showNav1 hidden flex flex-col absolute bg-gray-200 p-6 space-y-3 rounded-lg mt-3 ml-2 ">
+                                <li>History</li>
+                                <li>Our Team</li>
+                                <li>Blog</li>
+                            </ul>
+                        </li>
+                        <li class="text-gray-500 hover:text-black">Careers</li>
+                        <li class="text-gray-500 hover:text-black">About</li>
+                    </ul>
+
+
+                    <div class="md:space-x-8 mt-24 md:mt-0 p-2 flex flex-col items-center justify-center space-y-12 md:space-y-0 md:flex-row">
+                        <button class="cursor-pointer hover:text-gray-600">
+                             Login
+                        </button>
+                        <button class="cursor-pointer  border border-gray-500 text-gray-500 rounded-lg px-4 py-2 hover:border-black  hover:text-black ">
+                            Register
+                        </button>
+                    </div>
+
+                </div>
+ 
 
             </div>
 
@@ -87,6 +93,30 @@
 
 
     </header>
+
+
+    <main class="p-6 sm:p-10 pt-16 ">
+        <div class="flex flex-1 justify-center mx-0 items-center flex-col md:flex-row  ">
+            <div class="">
+                <h1 class="text-[80px] font-bold leading-[70px]">Make <br> remote work</h1>
+                <p class="text-[20px] max-w-[480px] my-6">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+                <button class="text-white bg-black px-4 py-2 rounded-lg border border-black hover:text-black hover:bg-white ">Learn more</button>
+                <div class="flex flex-wrap flex-1 items-center justify-start space-y-8 space-x-6 mt-28 my-20">
+                    <img  src="./images/client-databiz.svg" alt="databiz">
+                    <img src="./images/client-audiophile.svg" alt="audiophile">
+                    <img src="./images/client-meet.svg" alt="meet">
+                    <img src="./images/client-maker.svg" alt="marker">
+                </div>
+            </div>
+            <div class="">
+                <img class=" md:hidden m-40px " src="./images/image-hero-mobile.png" alt="">
+                <img class="hidden md:block w-[600px] h-[600px] object-contain" src="./images/image-hero-desktop.png" alt="">
+            </div>
+        </div>        
+
+    </main>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
