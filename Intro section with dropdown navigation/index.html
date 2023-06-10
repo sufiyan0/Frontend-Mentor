@@ -13,15 +13,22 @@
 <body>
     <header class="p-6 sm:p-10 flex flex-row `">
         <div class="flex w-full items-center justify-between     ">
-            <div class="flex">
+            <div class="flex " >
                 <img src="./images/logo.svg" alt="logo">
             </div>
-            <div class="flex flex-row items-center justify-end md:justify-between flex-1">
-                <div class=" block md:hidden ">
+            <div class="flex  flex-row items-center justify-end md:justify-between flex-1">
+
+
+                <div class=" block md:hidden hamClick ">
                     <img src="./images/icon-menu.svg" alt="hamburger">
                 </div>
-                <div class="md:flex-row items-center  flex md:w-full md:justify-between justify-center w-[300px]  flex-col  h-full md:relative bg-gray-200 md:bg-white absolute right-0 top-0">
-                    <ul class="flex items-center justify-center font-bold flex-col md:flex-row space-y-12 md:space-y-0  md:space-x-8 text-lg md:ml-10">
+
+
+                <div class="navshw hidden md:flex-row items-center  md:flex md:w-full md:justify-between justify-center w-[300px]  flex-col  h-full md:relative bg-gray-200 md:bg-white absolute right-0 top-0">
+                    <div id="cross" class="m-8 md:m-0 right-0 relative md:hidden ">
+                        <img src="./images/icon-close-menu.svg" alt="">
+                    </div>
+                    <ul class="flex mt-20 md:m-0  items-center justify-center font-bold flex-col md:flex-row space-y-12 md:space-y-0  md:space-x-8 text-lg md:ml-10">
 
 
                         <li class="show">
@@ -64,7 +71,7 @@
                                 <img class="h-full w-full mt-3 ml-1 " src="./images/icon-arrow-down.svg" alt="arrow">
 
                             </div>
-                            <ul class="showNav1 hidden flex flex-col absolute bg-gray-200 p-6 space-y-3 rounded-lg mt-3 ml-2 ">
+                            <ul class="showNav1 animate-fade animate-once animate-duration-500 animate-delay-300 animate-ease-lineary hidden flex flex-col absolute bg-gray-200 p-6 space-y-3 rounded-lg mt-3 ml-2 ">
                                 <li>History</li>
                                 <li>Our Team</li>
                                 <li>Blog</li>
